@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pro.promark1.TimeTrigger"
+    >
+
+    <TextView android:text="Enter the Time when should be the profile be active" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/TVwelcomeTimeTrigger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:id="@+id/TVfromTimeTrigger"
+        android:layout_below="@+id/TVwelcomeTimeTrigger"
+        android:layout_alignLeft="@+id/TVwelcomeTimeTrigger"
+        android:layout_alignStart="@+id/TVwelcomeTimeTrigger"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:id="@+id/TVtoTimeTrigger"
+        android:layout_marginTop="155dp"
+        android:layout_below="@+id/TVfromTimeTrigger"
+        android:layout_alignLeft="@+id/TVfromTimeTrigger"
+        android:layout_alignStart="@+id/TVfromTimeTrigger" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETfromHrsTimeTrigger"
+        android:layout_marginTop="66dp"
+        android:minWidth="50dp"
+        android:layout_below="@+id/TVfromTimeTrigger"
+        android:layout_toRightOf="@+id/TVfromTimeTrigger"
+        android:layout_toEndOf="@+id/TVfromTimeTrigger"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETfromMinTimeTrigger"
+        android:minWidth="50dp"
+        android:layout_alignTop="@+id/ETfromHrsTimeTrigger"
+        android:layout_toRightOf="@+id/ETfromHrsTimeTrigger"
+        android:layout_toEndOf="@+id/ETfromHrsTimeTrigger"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=":"
+        android:id="@+id/TVcolonFromTimeTrigger"
+        android:layout_alignBottom="@+id/ETfromHrsTimeTrigger"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETtoHrsTimeTrigger"
+        android:layout_below="@+id/TVtoTimeTrigger"
+        android:layout_alignLeft="@+id/ETfromHrsTimeTrigger"
+        android:layout_alignStart="@+id/ETfromHrsTimeTrigger"
+        android:layout_marginTop="77dp"
+        android:minWidth="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=":"
+        android:id="@+id/TVcolonToTimeTrigger"
+        android:layout_alignBottom="@+id/ETtoHrsTimeTrigger"
+        android:layout_alignLeft="@+id/TVcolonFromTimeTrigger"
+        android:layout_alignStart="@+id/TVcolonFromTimeTrigger" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETtoMinTimeTrigger"
+        android:layout_alignTop="@+id/ETtoHrsTimeTrigger"
+        android:layout_alignLeft="@+id/ETfromMinTimeTrigger"
+        android:layout_alignStart="@+id/ETfromMinTimeTrigger"
+        android:minWidth="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:id="@+id/BdoneTimeTrigger"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="onBdoneTimeTrigger" />
+
+</RelativeLayout>

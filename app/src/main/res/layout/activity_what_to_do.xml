@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pro.promark1.WhatToDo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bluetooth:"
+        android:id="@+id/TVblueWhatToDo"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/BblueOnWhatToDo"
+        android:minWidth="75dp"
+        android:onClick="onBblueOnWhatToDo"
+        android:layout_above="@+id/TVwifiWhatToDo"
+        android:layout_toLeftOf="@+id/BblueOffWhatToDo"
+        android:layout_toStartOf="@+id/BblueOffWhatToDo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/BblueOffWhatToDo"
+        android:minWidth="75dp"
+        android:onClick="onBblueOffWhatToDo"
+        android:layout_above="@+id/BwifiOffWhatToDo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WiFi:"
+        android:id="@+id/TVwifiWhatToDo"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/TVblueWhatToDo"
+        android:layout_alignLeft="@+id/TVblueWhatToDo"
+        android:layout_alignStart="@+id/TVblueWhatToDo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/BwifiOnWhatToDo"
+        android:layout_alignBottom="@+id/TVwifiWhatToDo"
+        android:layout_alignLeft="@+id/BblueOnWhatToDo"
+        android:layout_alignStart="@+id/BblueOnWhatToDo"
+        android:minWidth="75dp"
+        android:onClick="onBwifiOnWhatToDo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/BwifiOffWhatToDo"
+        android:layout_alignBottom="@+id/BwifiOnWhatToDo"
+        android:layout_alignLeft="@+id/BblueOffWhatToDo"
+        android:layout_alignStart="@+id/BblueOffWhatToDo"
+        android:onClick="onBwifiOffWhatToDo"
+        android:minWidth="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Auto Brightness:"
+        android:id="@+id/TVautoBhrghtnessWhatToDo"
+        android:layout_alignBottom="@+id/BautoBrightnessOnWhatToDo"
+        android:layout_alignLeft="@+id/TVwifiWhatToDo"
+        android:layout_alignStart="@+id/TVwifiWhatToDo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/BautoBrightnessOnWhatToDo"
+        android:minWidth="75dp"
+        android:onClick="onBautoBrightnessOnWhatToDo"
+        android:layout_below="@+id/BwifiOnWhatToDo"
+        android:layout_toLeftOf="@+id/BwifiOffWhatToDo"
+        android:layout_toStartOf="@+id/BwifiOffWhatToDo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/BautoBrightnessOffWhatToDo"
+        android:onClick="onBautoBrightnessOffWhatToDo"
+        android:minWidth="75dp"
+        android:layout_below="@+id/BwifiOnWhatToDo"
+        android:layout_toRightOf="@+id/BautoBrightnessOnWhatToDo"
+        android:layout_toEndOf="@+id/BautoBrightnessOnWhatToDo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ringer Volume:"
+        android:id="@+id/TVringerVolumeWhatToDo"
+        android:layout_below="@+id/TVautoBhrghtnessWhatToDo"
+        android:layout_alignLeft="@+id/TVautoBhrghtnessWhatToDo"
+        android:layout_alignStart="@+id/TVautoBhrghtnessWhatToDo"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETringerVolumeWhatToDo"
+        android:minWidth="150dp"
+        android:hint="(1to7) 0=vibrate"
+        android:layout_alignBottom="@+id/TVringerVolumeWhatToDo"
+        android:layout_alignLeft="@+id/BautoBrightnessOnWhatToDo"
+        android:layout_alignStart="@+id/BautoBrightnessOnWhatToDo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done !!"
+        android:id="@+id/BdoneWhatToDo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:onClick="onBdoneWhatToDo" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pro Mark1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+    <string name="title_activity_when_to_do">WhenToDo</string>
+    <string name="title_activity_wi_fi_trigger">WiFiTrigger</string>
+    <string name="title_activity_what_to_do">WhatToDo</string>
+    <string name="title_activity_headphones">Headphones</string>
+    <string name="title_activity_cell_tower_trigger">CellTowerTrigger</string>
+    <string name="title_activity_time_trigger">TimeTrigger</string>
+    <string name="title_activity_battery_trigger">BatteryTrigger</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_name_profile">NameProfile</string>
+</resources>
